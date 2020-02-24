@@ -15,6 +15,8 @@ class collectionViewCell: UICollectionViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var imageViewRef: UIImageView!
     override func awakeFromNib() {
+        imageViewRef.layer.cornerRadius = imageViewRef.frame.size.width/2
+        imageViewRef.clipsToBounds = true
         super.awakeFromNib()
         // Initialization code
     }
